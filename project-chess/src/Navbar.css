@@ -1,0 +1,75 @@
+/* Navbar container */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #333;
+  padding: 15px 20px;
+}
+
+/* Logo */
+.logo {
+  height: 70px;
+}
+
+/* Wrapper for Centering Navigation Links */
+.nav-center {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+/* Navigation Links */
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+/* Links */
+.nav-links a,
+.dropbtn {
+  color: white;
+  text-decoration: none;
+  padding: 10px 15px;
+  display: block;
+}
+
+.nav-links a:hover,
+.dropbtn:hover {
+  background-color: #555;
+}
+
+/* Dropdown Menu */
+.dropdown {
+  position: relative;
+}
+
+.dropdown-content {
+  display: none; /* Hide dropdown by default */
+  position: absolute;
+  background-color: #444;
+  min-width: 150px;
+  top: 100%;
+  left: 0;
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block; /* Show dropdown when parent is hovered */
+}
+
+.dropdown-content li {
+  display: block;
+}
+
+.dropdown-content a {
+  padding: 10px;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #666;
+}
